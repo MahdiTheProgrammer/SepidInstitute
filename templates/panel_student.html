@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/style_panel.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'scripts/script_panel.js' %}"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="pcontainer">
+        
+        <div class="header2">
+            <p class="title"> آموزشگاه زبان سپید</p>  
+        </div>
+
+
+        <div class="header1">
+                <a href="index" class="home_button">خانه</a>
+        </div>
+    </div>
+    <div class="div_user_pic">
+        <img src="{{ karbar.profile.url }}"  class="user_pic" id="user_pic" alt="My image" onclick="change_profile()">   
+    </div><br>
+
+
+        <div class="main">
+            <div class="mosh">
+                <p><label>نام : </label>{{karbar.name}}<br/></p>
+                <p><label>نام خانوادگی : </label>{{karbar.lastname}}<br/></p>
+                <p><label>شماره تلفن : </label>{{karbar.phone}}<br/></p>
+                <p><label>آدرس : </label>{{karbar.address}}<br/></p>
+                <p><label>ایمیل: </label>{{karbar.email}}<br/></p>
+                <p><label>رمز عبور: </label>{{karbar.password}}<br/></p>
+                <p><label> کدملی: </label>{{karbar.cm}}<br/></p>
+                <button class="enter_class" name="enter_class" alink="{{karbar.linkclass}}" onclick="enter_class()" id="enter_class" >ورود به کلاس</button>
+            </div>
+            <div class="home_work">
+                    <input type="text" name="kodemeli" class="kodemeli" value="{{karbar.cm}}" style="display: none;">
+                    <input type="submit" value="آپلود تکلیف" class="button_upload" onclick="homework_panel_opener()">
+                    {% for homework in homeworks %}
+                        <div class="homework_n" >
+                            <a href="{{homework.file.url}}">{{homework.file}}</a>
+                            <span name='url' value="{{homework.file.url}}" href="index" onclick="delete_homework()" style="cursor: pointer;" class="material-symbols-outlined">
+                                delete
+                                </span>
+                        </div>
+                    
+                    {% endfor%}
+
+
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+
+        </div>
+
+        <label class="on" value="{{form.as_p}}"></label>
+
+
+          
+</body>
+</html>

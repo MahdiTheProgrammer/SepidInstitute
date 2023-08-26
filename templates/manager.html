@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/style_manager.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>به پنل مدیریت خوش آمدید</h1>
+        </div>
+
+
+        <div class="main">
+            <h3 class="ll">لیست دانش آموزان</h3>
+            <div class="bb"><a href="register">ثبت نام </a></div>
+            <div class="list_students">
+                {% for karbar in karbars %}
+                    <div class="dd">
+                        <label>{{karbar.name}}</label><pre style="display: inline;"> </pre><label>{{karbar.lastname}}</label> 
+                        <form action="delete_accounts" method="get" style="display: inline;">
+                            <button name="phonekarbar" value="{{karbar.phone}}">پاک کردن</button>
+                        </form>
+                        <form action="settingd" method="get" style="display: inline;">
+                            <button name="phonekarbar" value="{{karbar.phone}}">تنظیمات</button>
+                        </form>
+                    </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>

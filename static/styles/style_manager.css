@@ -1,0 +1,93 @@
+.header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(160,160,255,1) 0%, rgba(137,235,255,1) 100%);
+    box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    grid-column: 1/-1;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 2.8cm 3cm 2cm 15cm;
+}
+body{
+    direction: rtl;
+    background-color:#F5F6F7 !important;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    font-family: sepid;
+}
+
+.main{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1.5cm 1.0cm;
+    margin-top: 14px;
+    
+}
+button, input{
+    padding: 6px;
+    border: 0px solid;
+    border-radius: 4px;
+    font-family: sepid;
+}
+.ll{
+    grid-column: 1/4;
+    grid-row: 1;
+
+}
+.bb{
+    display: flex;
+    grid-row: 2;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(160,160,255,1) 0%, rgba(137,235,255,1) 100%);
+    box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;    
+}
+a{
+    text-decoration: none;
+    font-family: sepid;
+}
+
+
+.list_students{
+    grid-row: 4;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(160,160,255,1) 0%, rgba(137,235,255,1) 100%);
+    box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    grid-column: 1/6;
+    min-width: 300px;
+    border-radius: 5px;
+}
+
+.dd{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(160,160,255,1) 0%, rgba(137,235,255,1) 100%);
+    box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    border-bottom: 1px solid black;
+    margin: 7px;
+    padding:4px;
+    
+}
+.linkd{
+    text-decoration: none;
+}
+@font-face {
+    font-family: sepid;
+    src: url(../fonts/B\ Koodak\ Bold_YasDL.com.ttf);
+}

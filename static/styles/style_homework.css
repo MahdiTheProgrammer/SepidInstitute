@@ -1,0 +1,64 @@
+html{
+    direction: rtl;
+    font-family: sepid;
+}
+body{
+    margin: 0;
+}
+
+
+.header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(160,160,255,1) 0%, rgba(137,235,255,1) 100%);
+    padding: 15px;
+    display: flex;
+    justify-content: start;
+
+}
+
+@font-face {
+    font-family: sepid;
+    src: url(../fonts/B\ Koodak\ Bold_YasDL.com.ttf);
+}
+
+.txt{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    display: none;
+}
+.underpanel{
+    background-color:#e6f3f3 !important; 
+    box-shadow: -3px 3px 27px -8px rgba(0,0,0,0.69);
+    -webkit-box-shadow: -3px 3px 27px -8px rgba(0,0,0,0.69);
+    -moz-box-shadow: -3px 3px 27px -8px rgba(0,0,0,0.69);
+    margin-top: 50px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    width: 70%;
+   
+}
+.upload_txt{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#submit_form{
+    padding: 20px;
+    border: 0px solid;
+    font-family: sepid;
+    color: #cdfdfd ;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color:#6aa9a9 !important; 
+    margin-top: 10px;
+}

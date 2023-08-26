@@ -1,0 +1,92 @@
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    font-family: Calibri, Helvetica, sans-serif;
+    direction:rtl;
+    background-color:#F5F6F7 !important;
+    font-family: sepid;
+    width: 50%;
+    min-width: 10cm;
+
+}
+
+button {
+    background-color: #fbf1d1;
+    width: 50%;
+    justify-content: center;
+    text-align:center;
+    padding:20px;
+    border:none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+input{
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+   
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.cancelbtn {
+    width: 5%;
+    padding: 10px 18px;
+    margin: 10px 5px;
+    margin-bottom: 0px;
+}
+.div_button_back{
+    max-width: 50px;
+    height: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 10px 11px 38px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 11px 38px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 11px 38px 0px rgba(0,0,0,0.75);
+    background-image: linear-gradient( 109.6deg,  rgba(254,253,205,1) 11.2%, rgba(163,230,255,1) 91.1% );
+}
+.button_back{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    
+}
+.container {
+    display:flex;
+    flex-direction:column; 
+    background-color: lightblue;
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-left: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );
+
+}
+@font-face {
+    font-family: sepid;
+    src: url(../fonts/B\ Koodak\ Bold_YasDL.com.ttf);
+}
+
+.db{
+    text-align:center;
+    margin-top: 10px;
+    border-radius: 7px;
+    
+}
+input{
+    margin-top:15px ;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/style_homework.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="txt">
+            <p >آپلود عکس</p>
+        </div>
+    </div>
+    <label style="display: none;" class="name">{{karbar.name}}</label>
+    <label style="display: none;" class="lastname">{{karbar.lastname}}</label>
+    <label style="display: none;" class="address">{{karbar.address}}</label>
+    <label style="display: none;" class="email">{{karbar.email}}</label>
+    <label style="display: none;" class="password">{{karbar.password}}</label>
+    <label style="display: none;" class="linkclass">{{karbar.linkclass}}</label>
+    <label style="display: none;" class="phone">{{karbar.phone}}</label>
+    <label style="display: none;" class="cm">{{karbar.cm}}</label>
+
+    <div class="main">
+        <div class="underpanel">
+            <p class="upload_txt">فایل را انتخاب کنید</p>
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit" id="submit_form">آپلود عکس</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="{% static 'scripts/profile.js' %}"></script>
+</body>
+</html>

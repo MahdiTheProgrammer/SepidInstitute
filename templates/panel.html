@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/style_panel.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pcontainer">
+        
+        <div class="header2">
+              <p class="title"> آموزشگاه زبان سپید</p>
+        </div>
+        <div class="header1">
+            <a href="index"><p class="home_button">خانه</p></a>
+            <a href="panel"><p class="panel_button">پنل دانش آموزان</p></a>
+            <a href="register"><p class="register_button">ثبت نام</p></a>
+        </div>
+
+    </div>
+    <br/><br/>
+    <div class="main">
+        <div class="form">
+        <form action="login" class="login" name="login" autocomplete="on">
+            <label>شماره تلفن : </label>
+            <input type="tel" placeholder="شماره تلفن خود را وارد کنید" name="phone" required><br/><br/><br/>       
+            <label>رمز :   </label>
+            <input type="password" placeholder="پسورد خود را وارد کنید" name="password" required><br/><br/><br/>
+            <input type="submit">
+        </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+.pcontainer{
+    display: grid;
+    font-size: 20px;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0px auto;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1.6cm 2.2cm;
+    gap: 20px;
+    direction: rtl;
+}
+
+
+
+body{
+    background-color:#F5F6F7 !important;
+}
+.main{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 10cm 10cm;
+}
+.text_upload{
+    width:99%;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    border: 0px;
+    padding: 5px;
+    background-color:#F5F6F7 !important;
+    font-family: sepid;
+}
+p{
+    line-height: 0.7;
+}
+
+.button_upload{
+    width: 90%;
+    font-family: sepid;
+    font-size: 20px;
+    height: 20%;
+    align-self: center;
+    border-radius: 12px;
+    border: 0px;
+    padding: 5px;
+    background-color:#F5F6F7 !important;
+}
+.form_upload{
+    width: 100%;
+}
+.home_work{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-column: auto;
+    padding: 10px;
+    margin: .5cm;
+    border-radius: 10px;
+    background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );
+    margin-top: 10px;
+
+
+}
+.mosh{
+
+    overflow: auto;
+    grid-column: auto;
+    padding: 10px;
+    margin: .5cm;
+    border-radius: 10px;
+    background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );
+    margin-top: 10px;
+
+
+
+}
+
+@font-face {
+    font-family: sepid;
+    src: url(../fonts/B\ Koodak\ Bold_YasDL.com.ttf);
+}
+
+.header1{
+    display: flex;
+    padding:2px;
+    grid-column: 1/-1;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    border-top: 1px solid rgb(175, 175, 175);
+    justify-content:flex-start;
+}
+
+.header2 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    grid-column: 1/-1;
+    padding: 20px;
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+    border-radius: 30px;
+    margin: 0;
+    font-size: 0.63cm;
+    font-family: sepid;
+}
+.div_user_pic{
+    border-radius: 30%;
+    display: flex;
+    justify-content: center ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    height: 4cm;
+}
+.user_pic{
+    border-radius: 30%;
+}
+.title{
+    align-self: center;
+    
+}
+.dform_upload{
+    display: flex;
+    justify-content: center;
+}
+.form_upload{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(160,160,255,1) 0%, rgba(137,235,255,1) 100%);
+    font-size: 20px;
+    
+    box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);   
+    width: 20%;
+
+}
+#open_upload{
+    text-align: center;
+    padding: 7px;
+    font-size: 0px; 
+
+}
+
+.dhome_button{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+.home_button {
+    color: white;
+    margin: 0px;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+    font-family: sepid;
+    margin: 2px 2px;
+}
+
+
+.form{      
+    background-color: #ffeaa7;
+    padding: 20px;
+}
+body{
+    direction: rtl;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    font-family: sepid;
+}
+
+.enter_class{
+    padding: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(199,255,160,1) 0%, rgba(252,255,137,1) 100%);
+    border:0px solid;
+    border-radius: 10px;
+    font-family:sepid;
+    font-size: 20px;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+
+.homework_n{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

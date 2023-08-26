@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'scripts/script.js' %}"></script>
+    <script src="jquery.js"></script>
+        <link rel="stylesheet" href="{% static 'styles/style_settingd.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <center class="header"> <h1>اطلاعات دانش آموز</h1> </center>
+
+    <div class="mosh">
+        <label>نام : </label>{{karbar.name}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt="" onclick="namedit()"><br/>
+        <label>نام خانوادگی : </label>{{karbar.lastname}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt="" onclick="fnamedit()"><br/>
+        <label>شماره تلفن : </label>{{karbar.phone}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt="" onclick="phonedit()"><br/>
+        <label>آدرس : </label>{{karbar.address}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt="" onclick="addressedit()"><br/>
+        <label>ایمیل: </label>{{karbar.email}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt="" onclick="emailedit()"><br/>
+        <label>رمز عبور: </label>{{karbar.password}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt="" onclick="passedit()"><br/>
+        <label>لینک کلاس : </label>{{karbar.linkclass}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt="" onclick="linkedit()"><br/>
+        <label>کد ملی : </label>{{karbar.cm}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt="" onclick="cmedit()"><br/>
+    </div>
+
+    <div class="div_button_back button_back">
+        <a href="manager" class="button_back">برگشت</a>
+    </div>
+    <p id="tel" style="display: none;">{{karbar.phone}}</p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 2.8cm 8cm 2cm 15cm;
+    direction: rtl;
+    background-color:#F5F6F7 !important;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    font-family: sepid;
+}
+.mosh{
+    line-height: 1.5;
+    grid-column: 1/4;
+    padding: 10px;
+    border-radius: 10px;
+    grid-row: 2;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(160,160,255,1) 0%, rgba(137,235,255,1) 100%);
+    box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    margin-top: 10px;
+    min-width: 300px;
+    margin-top: 20px;
+}
+
+
+
+.header{
+    grid-column:1/-1 ;
+    padding: 10px;
+    border-radius: 10px;
+    grid-row: 1;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(160,160,255,1) 0%, rgba(137,235,255,1) 100%);
+    box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px 11px 73px -21px rgba(0,0,0,0.75);
+
+}
+
+.button_back{
+    grid-row:3 ;
+}
+
+@font-face {
+    font-family: sepid;
+    src: url(../fonts/B\ Koodak\ Bold_YasDL.com.ttf);
+}
+
+
+.edit{
+    max-width: 20px;
+}
+.div_button_back{
+    max-width: 50px;
+    height: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 10px 11px 38px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 11px 38px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 11px 38px 0px rgba(0,0,0,0.75);
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.button_back{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    
+}
+
+
+
+

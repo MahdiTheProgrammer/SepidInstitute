@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'styles/style_register.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <center> <h1> ورود به پنل</h1> </center>
+
+        <form class="container"  action="check_login" method="POST"  style="width: 50%;">
+            {%csrf_token%}
+                <label>شماره تلفن : </label>
+                <input type="number" placeholder="شماره تلفن خود را وارد کنید" name="phone" required>       
+                <label>رمز : </label>
+                <input type="password" placeholder="پسورد خود را وارد کنید" name="password" required>
+                {% for message in messages %}
+                <h5 class="error">{{message}}</h5>
+                {% endfor %}
+                <input class="db" type="submit">
+
+        </form>
+        <div class="div_button_back">
+            <a href="index" class="button_back">برگشت</a>
+            </div>
+</body>
+</html>
